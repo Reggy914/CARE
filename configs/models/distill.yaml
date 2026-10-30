@@ -1,0 +1,7 @@
+module: models.distill
+class_name: DistillModel
+hidden_dim: 128
+dropout: 0.1
+log_every_batches: 500
+distill_cache_dir: outputs/cache/distill
+teacher_dir: null

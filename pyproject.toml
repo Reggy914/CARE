@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "care-forecasting"
+version = "0.1.0"
+description = "CARE research code for electrical-current time-series forecasting"
+readme = "README.md"
+authors = [{ name = "Jiaji Ren" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "torch>=2.2,<3",
+  "numpy==2.2.6",
+  "pandas==2.3.3",
+  "scikit-learn==1.7.2",
+  "PyYAML==6.0.3",
+  "transformers==4.40.1",
+  "huggingface-hub==0.36.2",
+  "tabulate>=0.9,<1",
+]
+
+[project.urls]
+Homepage = "https://github.com/Reggy914/CARE"
+Repository = "https://github.com/Reggy914/CARE"
+Issues = "https://github.com/Reggy914/CARE/issues"
+
+[project.scripts]
+care = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["models*", "layers*", "data_provider*", "exp*", "utils*", "configs*"]
+exclude = ["outputs*", "pretrained*"]
+
+[tool.setuptools.package-data]
+configs = ["experiments/*.yaml", "models/*.yaml"]

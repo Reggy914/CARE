@@ -1,0 +1,7 @@
+module: models.normal_head
+class_name: NormalHeadModel
+head_hidden_dim: 128
+head_num_layers: 2
+dropout: 0.1
+freeze_backbone: true
+backbone: null

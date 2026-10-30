@@ -1,0 +1,9 @@
+# Install a platform-appropriate PyTorch build first when CUDA support is needed.
+torch>=2.2,<3
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+PyYAML==6.0.3
+transformers==4.40.1
+huggingface-hub==0.36.2
+tabulate>=0.9,<1

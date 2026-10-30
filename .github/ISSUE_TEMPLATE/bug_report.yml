@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a reproducible problem in CARE
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not upload private data, credentials, or restricted checkpoints.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Describe the observed behavior and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and configuration
+      description: Include the exact command and relevant configuration, with private paths redacted.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Python, PyTorch, CUDA, GPU or CPU, and CARE revision.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error output
+      description: Paste the complete traceback or error message.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest sequence that reproduces the issue.
+    validations:
+      required: true

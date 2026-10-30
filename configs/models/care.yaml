@@ -1,0 +1,20 @@
+module: models.care
+class_name: CARE
+inherits: care_anchor
+
+# CARE Stage II, Section 3.3, Eqs. (5)-(6).
+expert_hidden_size: 128
+expert_num_layers: 2
+expert_dropout: 0.10
+expert_seed_offset: 2701
+expert_learning_rate: 0.001
+expert_max_epochs: 20
+expert_early_stopping_patience: 5
+expert_early_stopping_min_delta: 0.0001
+
+# Existing Stage III validation-only reconciliation settings.
+reconciliation_mae_tolerance: 0.025
+reconciliation_group_count: 4
+reconciliation_safety_blocks: 8
+reconciliation_safety_z: 1.645
+reconciliation_grid_size: 101

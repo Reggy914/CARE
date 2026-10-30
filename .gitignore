@@ -1,0 +1,51 @@
+# Python caches and build products
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Environments and local tooling
+.venv/
+venv/
+env/
+.conda/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data, pretrained assets, and generated artifacts
+data/
+pretrained/
+artifacts/
+outputs/
+output/
+results/
+result/
+checkpoints/
+logs/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+
+# Notebook and temporary files
+.ipynb_checkpoints/
+*.ipynb
+*.tmp
+*.temp
+*.bak
+.cache/
+tmp/

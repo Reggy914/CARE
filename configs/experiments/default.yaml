@@ -1,0 +1,23 @@
+input_len: 96
+pred_len: 96
+stride: 96
+epochs: 20
+batch_size: 128
+
+learning_rate: 0.001
+weight_decay: 0.0
+grad_clip: 1.0
+early_stopping: true
+early_stopping_patience: 12
+early_stopping_min_delta: 0.0
+seeds: [2024, 2025, 2026]
+models:
+  - timer
+  - patchtst
+  - itransformer
+  - timemixer
+  - gtr
+  - normal_head
+  - output_correction
+  - distill
+  - care

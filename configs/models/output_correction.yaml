@@ -1,0 +1,8 @@
+module: models.output_correction
+class_name: OutputCorrectionModel
+correction_hidden_dim: 128
+correction_num_layers: 2
+dropout: 0.1
+residual_scale: 1.0
+freeze_backbone: true
+backbone: null

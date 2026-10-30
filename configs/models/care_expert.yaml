@@ -1,0 +1,12 @@
+module: models.care_expert
+class_name: CAREExpert
+
+# Same paper-aligned Stage-II Expert used by full CARE.
+expert_hidden_size: 128
+expert_num_layers: 2
+expert_dropout: 0.10
+expert_seed_offset: 2701
+expert_learning_rate: 0.001
+expert_max_epochs: 20
+expert_early_stopping_patience: 5
+expert_early_stopping_min_delta: 0.0001

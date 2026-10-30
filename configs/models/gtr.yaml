@@ -1,0 +1,2 @@
+module: models.gtr
+class_name: GTRModel

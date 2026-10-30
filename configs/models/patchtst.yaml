@@ -1,0 +1,10 @@
+module: models.patchtst
+class_name: PatchTSTModel
+patch_len: 16
+d_model: 128
+n_heads: 4
+num_layers: 2
+d_ff: 256
+dropout: 0.1
+channel_independent: true
+patch_stride: 8

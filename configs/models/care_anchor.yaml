@@ -1,0 +1,15 @@
+module: models.care_anchor
+class_name: CAREAnchor
+timer_input_token_len: 96
+
+# CARE Section 3.2, Eqs. (3)-(4).
+hidden_dim: 256
+dropout: 0.1
+fusion_hidden_dim: 256
+tcn_layers: 3
+tcn_kernel_size: 3
+huber_delta: 1.0
+
+# Explicit representation-isolation hooks reserved for future ablations.
+mask_timer_representation: false
+mask_regime_representation: false
